@@ -1,0 +1,14 @@
+.coupon-detail {
+    padding: 2rem;
+    text-align: center;
+}
+
+.coupon-detail button {
+    margin-top: 1rem;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

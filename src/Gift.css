@@ -1,0 +1,91 @@
+.gift-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.gift-box {
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gift-box img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  animation: bounce 1.2s infinite;
+}
+
+.gift-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gift-content img {
+  width: 250px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.reveal-content {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .gift-box {
+        width: 180px;
+        height: 180px;
+    }
+    .gift-content img {
+        width: 180px;
+    }
+    .gift-message {
+        font-size: 1.5rem;
+    }
+    .reveal-content {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+}

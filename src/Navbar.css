@@ -1,0 +1,33 @@
+/* Navbar.css */
+
+.navbar {
+    background: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .logo {
+    font-family: 'Rogue Script', cursive;
+    font-weight: normal;    /* script fonts usually look best without bold */
+    font-size: 1.8rem;      /* made it a bit bigger for better logo look */
+     margin-left: 30px;  /* adds space from the left edge */
+    /* or you can use padding-left: 20px; if you prefer */
+}
+
+.navbar ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}

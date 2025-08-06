@@ -1,0 +1,25 @@
+.home-container {
+    height: 100vh;
+    background-color: #F9F6DE !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 3rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

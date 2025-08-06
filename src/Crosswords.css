@@ -1,0 +1,107 @@
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* <-- This makes <p> and <h2> centered text */
+  width: 100%;
+}
+.check-button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.check-button:hover {
+    background-color: #1b4a56;
+}
+
+
+.title {
+    margin-bottom: 20px;
+    text-align: center; /* Just in case */
+}
+
+.crossword-grid {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.grid-row {
+    display: flex;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    position: relative;
+    box-sizing: border-box;
+    background: white;
+}
+
+.cell input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    outline: none;
+    background: transparent;
+}
+
+.cell .number {
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    font-size: 10px;
+    color: #555;
+}
+
+.cell.blank {
+    background: black;
+    border: 1px solid #ccc;
+}
+
+.clues {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.clue-section h3 {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.clue-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.clue-section li {
+    margin: 4px 0;
+}
+
+.baby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center children horizontally */
+    justify-content: center;
+    /* Center children vertically if needed */
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 10px auto;
+    /* Auto margin centers the box itself */
+}

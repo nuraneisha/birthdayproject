@@ -1,0 +1,53 @@
+.coupons-page {
+    padding: 2rem;
+    text-align: center;
+}
+
+.coupon-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 columns */
+    gap: 2rem;                              /* spacing between them */
+    justify-items: center;                 /* center the images */
+}
+
+/* Remove card styles – make image look standalone */
+.coupon-card {
+    width: auto;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    transition: transform 0.2s;
+}
+
+/* Optional: hover scale */
+.coupon-card:hover {
+    transform: scale(1.05);
+}
+
+/* Make image big and clear */
+.coupon-card img {
+    width: 400px;       /* Adjust size as needed */
+    height: auto;
+    object-fit: contain;
+}
+
+/* Button styles stay the same */
+.button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+.button-accept {
+    background-color: #d61575;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}

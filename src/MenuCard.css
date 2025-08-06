@@ -1,0 +1,77 @@
+.card {
+  background-color: #b1d4e0;
+  border-radius: 15px;
+  width: 250px;
+  height: 360px;                     /* ✅ same height for all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;   /* ✅ keeps button at the bottom */
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Modal overlay - darkens background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Modal box */
+.modal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+/* Optional: Style close button inside modal */
+.modal button {
+  margin-top: 20px;
+  background-color: #d61575;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  min-height: 24px;     /* ✅ ensures same space for short/long titles */
+}
+
+.card button {
+  background-color: #d61575;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
